@@ -3,7 +3,7 @@ import React from 'react'
 import styles from './Box.module.css'
 
 interface BoxProps {
-    Id: number,
+    key: number,
     ImgUrl: string,
     ImgAlt?: string,
     className: string,
@@ -16,11 +16,11 @@ export const Box = (
         ImgAlt,
         className,
         classDesc,
-        Id
+        key
     }: BoxProps
 ) => {
     return (
-        <div className={styles.Box} key={Id}>
+        <div className={styles.Box} key={key}>
             <img src={ImgUrl} alt={ImgAlt} />
             <div className={styles.BoxContent}>
                 <h6>{className}</h6>
