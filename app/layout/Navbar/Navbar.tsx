@@ -86,6 +86,8 @@ export const Navbar = () => {
             </div>
 
 
+
+
             {/* for Slider */}
             <MdOutlineMenuOpen
                 className={styles.MenuIcon}
@@ -103,7 +105,7 @@ export const Navbar = () => {
 
                     {
                         NavLinks.map((I) => (
-                            <div key={I.LinkTo} className={styles.NavLinks}>
+                            <div key={I.LinkTo} className={styles.NavLink}>
                                 <Link href={I.LinkTo}>{I.LinkText}</Link>
                             </div>
                         ))

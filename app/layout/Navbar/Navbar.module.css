@@ -55,6 +55,10 @@
     z-index: 10000;
 }
 
+.Slider.Open {
+    right: 0px;
+}
+
 .SliderContent {
     position: relative;
     width: 300px;
@@ -72,16 +76,16 @@
     margin-bottom: 2rem;
 }
 
-.SliderContent a {
+.SliderContent .NavLink :any-link {
     padding: 8px 22px;
     margin: 10px 0;
     font-size: 1.2rem;
-    color: #333;
+    color: #333 !important;
     border-radius: 9px;
     text-align: center;
 }
 
-.SliderContent .NavLinks {
+.SliderContent .NavLink {
     margin-bottom: 2rem;
 }
 

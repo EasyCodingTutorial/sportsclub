@@ -20,7 +20,7 @@ export const Box = (
     }: BoxProps
 ) => {
     return (
-        <div className={styles.Box}>
+        <div className={styles.Box} key={key}>
             <img src={ImgUrl} alt={ImgAlt} />
             <div className={styles.BoxContent}>
                 <h6>{className}</h6>
