@@ -1,0 +1,43 @@
+.MainBg {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(/assets/Home.jpg) no-repeat;
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainBg div {
+    text-align: center;
+    color: #fff;
+}
+
+.MainBg div h6 {
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.MainBg div h5 {
+    font-weight: 900;
+    font-size: 60px;
+    margin-block: 7px;
+}
+
+@media(max-width:900px) {
+
+    .MainBg {
+        height: 60vh;
+    }
+
+    .MainBg div h6 {
+        font-size: 20px;
+    }
+
+    .MainBg div h5 {
+        font-size: 30px;
+    }
+}

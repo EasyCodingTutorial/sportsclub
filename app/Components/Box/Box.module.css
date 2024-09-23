@@ -1,0 +1,62 @@
+.Box {
+    flex-basis: calc(25% - 10px);
+    height: 400px;
+    box-shadow: var(--boxShadow);
+    overflow: hidden;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.Box:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.Box img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.BoxContent {
+    padding: 10px;
+}
+
+.BoxContent h6 {
+    font-weight: 800;
+    font-size: 20px;
+    width: 16ch;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.BoxContent p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    line-clamp: 4;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+@media(max-width:1200px) {
+    .Box {
+        flex-basis: calc(33.333% - 10px);
+    }
+
+}
+
+@media(max-width:900px) {
+    .Box {
+        flex-basis: calc(50% - 10px);
+    }
+
+}
+
+@media(max-width:600px) {
+    .Box {
+        flex-basis: calc(100%);
+    }
+
+}

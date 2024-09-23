@@ -1,0 +1,23 @@
+.Btn {
+    width: max-content;
+    background: var(--main);
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 8px 22px;
+    border-radius: 999px;
+}
+
+.Btn:hover {
+    background: #fff;
+    color: var(--main);
+    border: 0.3px solid var(--main);
+}
+
+
+@media(max-width:768px) {
+    .Btn {
+        font-size: 13px;
+        padding: 6px 16px;
+    }
+}

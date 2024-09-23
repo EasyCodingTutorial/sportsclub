@@ -1,0 +1,41 @@
+.Match {
+    background: #fff;
+    padding: 10px;
+}
+
+.Row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-block: 25px;
+}
+
+.Match div {
+    flex-basis: calc(33.33% - 10px);
+    height: 150px;
+}
+
+.Match div img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.Match h6 {
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+}
+
+@media(max-width:950px) {
+
+    .Match div img {
+        height: 80%;
+        width: 80%;
+    }
+
+    .Match h6 {
+        font-size: 20px;
+        text-align: center;
+    }
+}
