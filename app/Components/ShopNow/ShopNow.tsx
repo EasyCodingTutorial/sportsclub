@@ -19,9 +19,9 @@ export const ShopNow = () => {
 
             <div className={styles.Row}>
                 {
-                    shopData.map((I) => (
+                    shopData.map((I, index) => (
                         <Box
-                            key={I.id}
+                            key={index}
                             ImgUrl={I.img}
                             ImgAlt={I.name}
                             className={I.name}

@@ -19,9 +19,9 @@ export const OurClasses = () => {
 
             <div className={styles.Row}>
                 {
-                    ClassData.map((I) => (
+                    ClassData.map((I, index) => (
                         <Box
-                            key={I.id}
+                            key={index}
                             ImgUrl={I.classImgUrl}
                             ImgAlt={I.className}
                             className={I.className}
