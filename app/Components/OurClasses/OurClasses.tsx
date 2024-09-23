@@ -21,6 +21,7 @@ export const OurClasses = () => {
                 {
                     ClassData.map((I) => (
                         <Box
+                            Id={I.id}
                             ImgUrl={I.classImgUrl}
                             ImgAlt={I.className}
                             className={I.className}

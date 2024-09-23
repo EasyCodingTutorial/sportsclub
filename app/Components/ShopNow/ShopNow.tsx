@@ -21,6 +21,7 @@ export const ShopNow = () => {
                 {
                     shopData.map((I) => (
                         <Box
+                            Id={I.id}
                             ImgUrl={I.img}
                             ImgAlt={I.name}
                             className={I.name}
